@@ -1,0 +1,17 @@
+.appWrapper {
+    font-family: roboto, sans-serif;
+    padding-top: 0;
+    margin: auto;
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "header header header"
+        "nav content content";
+    grid-template-rows: 43px 1fr;
+    grid-template-columns: 260px 1fr;
+}
+
+.appContent {
+    grid-area: content;
+    background-color: rgb(189, 190, 158);
+}

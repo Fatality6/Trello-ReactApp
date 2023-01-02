@@ -1,0 +1,30 @@
+version: "3"
+services:
+  mysql:
+    image: mysql:8.0.29
+    command: --init-file /data/application/init_mysql.sql
+    volumes:
+    - ./docker/init_mysql.sql:/data/application/init_mysql.sql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: homestead
+      MYSQL_USER: homestead
+      MYSQL_PASSWORD: homestead
+    ports:
+      - 3306:3306
+  adminer:
+    image: adminer:4.8.1
+    ports:
+      - 8080:8080
+  node:
+    image: node:18.12.1
+    user: node
+    working_dir: /home/node/app
+    environment:
+    - NODE_ENV=development
+    volumes:
+    - ./:/home/node/app
+    ports:
+    - 80:3000
+    command: bash -c "npm install && npm start"
+

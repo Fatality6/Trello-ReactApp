@@ -1,0 +1,66 @@
+.nav {
+    grid-area: nav;
+    height: 100vh;
+    background-color: #026AA7;
+    border-right:1px solid #298FC9;
+    font-family: Segoe UI, Roboto, Noto Sans, Ubuntu, Droid Sans, Helvetica Neue,sans-serif;
+}
+
+.box {
+    height: 200px;
+    border-bottom:1px solid #298FC9;
+
+}
+
+.myBoardsWrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    padding: 10px;
+}
+
+.box a {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: -0.003em;
+    color: #fff;
+    text-decoration: none;
+    line-height: 30px;
+}
+
+.myBoards {
+    width: 100px;
+}
+
+.plus {
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.board {
+    display: flex;
+    height: 32px;
+    background-color: #4D94BD;
+}
+
+.board a{
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.boardName {
+    padding-top: 3px;
+}
+
+.preview {
+    height: 20px;
+    width: 25px;
+    background-color: #1780BE;
+    border: 1px solid #5699C0;
+    border-radius: 3px;
+    margin: 5px  10px 0 12px;
+    cursor: pointer;
+}

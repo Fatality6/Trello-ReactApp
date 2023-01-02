@@ -1,0 +1,108 @@
+.header {
+    width: 100%;
+    grid-area: header;
+    background-color: #026AA7;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 44px;
+    border-bottom: 1px solid #298FC9;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    padding: 10px 4px;
+}
+
+.wrapper img {
+    width: 75px;
+    height: 15px;
+    padding-left: 38px;
+    cursor: pointer;
+}
+
+.ref {
+    color: #ffffff;
+    font-family: 'Segoe UI', 'Roboto', 'Noto Sans', 'Ubuntu', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    font-size: 14px;
+    padding-left: 20px;
+    cursor: pointer;
+    line-height: 13px;
+}
+
+.down {
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.spacing {
+    width: 350px;
+}
+
+.btn {
+    position: fixed;
+    top: 5px;
+    width: 72px;
+    height: 32px;
+    border: none;
+    border-radius: 2px;
+    background-color: #3384B3;
+    color: #ffffff;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.btnWrapper {
+    display: flex;
+    padding: 5px;
+    background-color: red;
+}
+
+.btn:hover {
+    background-color: #298FC9;
+}
+
+.search {
+    margin-top: -8px;
+    width: 175px;
+    height: 30px;
+    background-color: #3384B3;
+    border: none;
+    border-radius: 5px;
+}
+
+.search:hover {
+    background-color: #298FC9;
+}
+
+.search::placeholder {
+    color: #fff;
+    padding-left: 10%;
+}
+
+.svg {
+    padding: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+.user img {
+    width: 25px;
+    height: 25px;
+    padding-left: 0;
+    padding-right: 5px;
+    cursor: pointer;
+}
+
+.refWrapper {
+    display: flex;
+    padding: 5px;
+    /* background-color: #298FC9; */
+    border-radius: 4px;
+}
+
+.ref :hover {
+    background-color: #298FC9;
+}
